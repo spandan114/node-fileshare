@@ -9,12 +9,12 @@ router.get("/:uuid", async (req, res) => {
     }
 
     const filepath = `${__dirname}/../${file.path}`;
-    console.log(filepath)
 
     return res.render('download',{
         uuid: file.uuid,
         fileName:file.filename,
         fileSize:file.size,
+        filepath:filepath,
         downloadLink: `${process.env.APP_BASE_URL}/files/download/${file.uuid}`
     })
 
