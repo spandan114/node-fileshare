@@ -8,6 +8,9 @@ router.get("/:uuid", async (req, res) => {
         return res.render('download',{error:'Link has been expired'})
     }
 
+    const filepath = `${__dirname}/../${file.path}`;
+    console.log(filepath)
+
     return res.render('download',{
         uuid: file.uuid,
         fileName:file.filename,

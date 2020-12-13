@@ -10,7 +10,6 @@ router.get('/:uuid', async (req, res) => {
    } 
    const response = await file.save();
    const filePath = `${__dirname}/../${file.path}`;
-   localStorage.setItem("filepath",filePath)
    res.download(filePath);
 });
 
