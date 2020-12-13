@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node start",
+    "start": "node server.js",
     "run": "nodemon start"
   },
   "author": "spandan joshi",
