@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 });
 app.use('/api/files',require('./routes/files.router'));
 app.use('/files', require('./routes/showfile.router'));
+app.use('/files/download', require('./routes/download'));
 
 const port = process.env.PORT || 3000;
 
