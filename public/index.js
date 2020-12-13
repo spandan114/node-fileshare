@@ -19,7 +19,8 @@ const emailForm = document.querySelector("#emailForm");
 //Toast message
 const toast = document.querySelector('.toast')
 
-const baseURL = "https://innshare.herokuapp.com";
+const baseURL = "https://fileshare123.herokuapp.com"
+// "https://innshare.herokuapp.com";
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
