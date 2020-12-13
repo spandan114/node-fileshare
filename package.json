@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "run": "nodemon start"
+    "run": "nodemon server.js"
   },
   "author": "spandan joshi",
   "license": "MIT",
